@@ -8,9 +8,7 @@ import com.br.victorvaz.springboot.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-	
-	
-	
+	User findByEmail(String email);
 	
 
 }
